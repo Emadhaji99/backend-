@@ -5,3 +5,6 @@ main()
 def second():
     print("second")
 second()
+def third():
+    print("third")
+third()
