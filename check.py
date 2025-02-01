@@ -8,3 +8,6 @@ second()
 def third():
     print("third")
 third()
+def fourth():
+    print("fourth")
+fourth()
