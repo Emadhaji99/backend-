@@ -5,9 +5,9 @@
         <link rel="stylesheet" href="../../static/calender/calender.css">
     </head>
     <body>
-        {% if newyear %}
+        {% if newyear is True %}
             <p>YES</p>
-        {% else %}
+        {% elif newyear is False %}
             <p>NO</p>
         {% endif %}
     </body>
