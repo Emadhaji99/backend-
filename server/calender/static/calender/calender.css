@@ -1,9 +1,12 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-p{
-    text-align: center;
-    font-size: 200px;
-    color: white;
-    font-family: 'Lucida Sans';
+
+p {
+  text-align: center;
+  font-size: 200px;
+  color: red;
+  font-family: "Lucida Sans";
 }
+
+/*# sourceMappingURL=calender.css.map */
