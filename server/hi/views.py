@@ -7,4 +7,4 @@ def greet(request,tag):
         "name":tag,
         "list":["banana","orange"],
     }
-    return render(request,"hi/greet.html",context)
+    return render(request,"hi\\greet.html",context)
