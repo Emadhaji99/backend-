@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title> todo App</title>
-    </head>
-    <body>
-        <ul>
-            {%for item in task%}
-            <li>{{item}}</li>
-            {%endfor%}
-        </ul>
-    </body>
-</html>
+{% extends "todo/main.html" %}
+{% block ul %}
+    {%for item in task%}
+    <li>{{item}}</li>
+    {%endfor%}
+{% endblock %}
+
