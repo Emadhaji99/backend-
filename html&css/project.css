@@ -1,0 +1,69 @@
+.foo {
+  color: blue;
+}
+
+.title {
+  color: blue;
+}
+
+.t_row {
+  color: black;
+}
+
+li > a {
+  color: white;
+}
+
+li {
+  color: blue;
+}
+
+p {
+  text-align: center;
+  color: red;
+  border: 2px solid blueviolet;
+  width: 200px;
+  margin: 200px;
+  background-color: black;
+  font-size: 300px;
+}
+
+table {
+  border: 3px solid black;
+  border-collapse: collapse;
+  font-family: Franklin Gothic Medium;
+  font-size: large;
+  text-align: center;
+  color: black;
+  background-color: bisque;
+  height: 200px;
+  width: 200px;
+  margin: 200px;
+}
+
+th, td {
+  border: 5px solid blue;
+  padding: 5px;
+}
+
+button {
+  font-family: "Times New Roman";
+  background-color: blueviolet;
+}
+
+button:hover {
+  color: yellow;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    background-color: black;
+  }
+}
+
+/*# sourceMappingURL=project.css.map */

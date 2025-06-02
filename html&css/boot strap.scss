@@ -1,0 +1,36 @@
+%deffult{
+    color: bisque;
+    background-color: black;
+    border-radius: 20px;
+}
+.btn.btn-primary.my-custom{
+    color:red;
+    background-color: aqua;
+    margin: 200px;
+    width: 200px;
+}
+.btn.btn-warning.se{
+    border-radius: 20px;
+    width: 300px;
+    margin-left:200px ;
+    @extend %deffult;
+}
+.badge.badge-secondary{
+    margin-top: 50px;
+    @extend %deffult;
+    margin-left: 20px;
+    color: blue;
+    
+}
+.alert.alert-dark{
+    margin:20px;
+    @extend %deffult;
+}
+.row{
+    margin-top:  200px;
+}
+.row>div{
+    background-color: teal;
+    color:bisque;
+    border:solid 3px orange;
+}
