@@ -6,9 +6,8 @@
     <body>
         <h1>{{name}}</h1>
         <ol>
-            {%for items in list%}
-            <li>{{items}}</li>
-            {%endfor%}
+            {%first=list[0]%}
+            <li>{{first}}</li>
         </ol>
     </body>
 </html>
