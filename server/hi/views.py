@@ -1,9 +1,10 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 def index(request):
-    return render(request,"hi/index.html") 
+    return HttpResponse("fuck you ")
 def greet(request,tag):
     context={
         "name":tag,
-        "list":["banana","orange"],
+        "my_list":["banana","orange"],
     }
-    return render(request,"hi\greet.html",context)
+    return render(request,"hi\\greet.html",context)
