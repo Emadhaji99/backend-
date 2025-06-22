@@ -5,7 +5,7 @@ def d(request):
     day=date.day
     month=date.month
     context={
-    "newyear":month==1 and day==1
+    "newyear":(month==1) and (day==1)
     }
     return render(request,"calender\\calender.html",context)
 
