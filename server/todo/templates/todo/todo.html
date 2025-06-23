@@ -1,8 +1,9 @@
 {% extends "todo/main.html" %}
-{% block ul %}
+{% block title%} todo app {%endblock%}
+{%block ul%}
     {%for item in task%}
     <li>{{item}}</li>
     {%endfor%}
-    <a href="{% url 'add' %}">type the option</a>
-{% endblock %}
+    <a href="{% url 'add' %}">go to the add page to add task </a>
+{%endblock%}
 
