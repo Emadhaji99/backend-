@@ -1,8 +1,8 @@
 {% extends "todo/main.html"%}
 {% block add %}
-<form action="{url 'todo:task'}" method="post">
+<form action="{url 'task'}" method="post">
     <input type="text" name="text">
     <input type="submit" value="send" >
 </form>
-<a href="{% url 'todo:task'%}">go to the list</a>
+<a href="{% url 'task'%}">go to the list</a>
 {%endblock%}
