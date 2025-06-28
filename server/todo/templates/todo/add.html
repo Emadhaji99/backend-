@@ -1,6 +1,6 @@
 {% extends "todo/main.html"%}
 {% block add %}
-<form action="{% url 'task' %}" method="post">
+<form action="{% url 'task' %}" method="get">
     {% csrf_token %}
     <input type="text" name="text">
     <input type="submit" value="send" >
