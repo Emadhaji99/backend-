@@ -1,9 +1,8 @@
 {% extends "todo/main.html"%}
 {% block add %}
 <form action="{% url 'task' %}" method="get">
-    {% csrf_token %}
-    <input type="text" name="text">
-    <input type="submit" value="send" >
+    <input type="checkbox" name="subscription" value="yes">
+    <button>send</button>
 </form>
-<a href="{% url 'task' %}">go to the list</a>
+<a href="{%url 'task' %}"> go task  </a>
 {%endblock%}
