@@ -1,9 +1,9 @@
 {% extends "todo/main.html" %}
 {% block title%} todo app {%endblock%}
 {%block ul%}
-    {%for item in task%}
+    {%for item in tas%}
     <li>{{item}}</li>
     {%endfor%}
-    <a href="{% url 'add' %}"> add </a>
+    <a href="{% url 'todo:add' %}"> add </a>
 {%endblock%}
 
