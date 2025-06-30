@@ -1,9 +1,17 @@
 {% extends "todo/main.html"%}
+{% block title %} add {% endblock %}
+
 {% block add %}
-<form action="{% url 'task' %}" method="get">
-    <input type="checkbox" name="subscription" value="yes">
-    <input type="text" name="text">
-    <button>send</button>
-</form>
-<a href="{%url 'task' %}"> go task  </a>
+    <form action="{% url 'task' %}" method="get">
+        <input type="checkbox" name="subscription" value="yes">
+        <input type="text" name="text">
+        <input type="submit" value="send it"
+    </form>
+    <a href="{%url 'task' %}"> go task  </a>
+{%endblock%}
+
+{%block ul%}
+    {% for item in ta %}
+    <li>{{item}}</li>
+    {%endfor%}
 {%endblock%}
