@@ -2,7 +2,7 @@
 {% block title %} add {% endblock %}
 
 {% block add %}
-    <form action="{% url 'todo:task' %}" method="post">
+    <form action="{% url 'todo:submit' %}" method="post">
         {% csrf_token %}
         <input type="checkbox" name="subscription" value="yes">
         <input type="text" name="text">
