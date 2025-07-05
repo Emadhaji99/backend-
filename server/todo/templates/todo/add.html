@@ -1,14 +1,23 @@
 {% extends "todo/main.html"%}
-{% block title %} add {% endblock %}
+{% block title %} 
+    add 
+{% endblock %}
+{%block link%}
+    <link rel="stylesheet" href="../../statics/add.css">
+    {%endblock%}
 
 {% block add %}
     <form action="{% url 'todo:submit' %}" method="post">
         {% csrf_token %}
+        <p>do you want to subscribe to chanel </p>
         <input type="checkbox" name="subscription" value="yes">
+        <P>enter your email</P>
         <input type="text" name="text">
+        <div id="special">
         <input type="submit" value="send it">
+        </div>
     </form>
-    <div>
+    <div >
     <a href="{%url 'todo:task' %}"> go task  </a>
     </div>
 {%endblock%}
