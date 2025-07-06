@@ -1,15 +1,17 @@
 {% extends "todo/main.html"%}
 {% load static%}
+
 {% block title %} 
     add 
 {% endblock %}
+
 {%block link%}
     <link rel="stylesheet" href="{% static 'add.css' %}"">
 {%endblock%}
 
 {% block add %}
-    <form action="{% url 'todo:submit' %}" method="post">
-        {% csrf_token %}
+<div>
+    <form>
         <p>  do you want to subscribe to chanel 
         <input type="checkbox" name="subscription" value="yes">
         </p>
@@ -20,6 +22,11 @@
         </div>
     </form>
     <a href="{%url 'todo:task' %}"> go task  </a>
+
+</div>
+    <form action="{% url 'todo:submit' %}" method="get">
+        {{Form}}
+    </form>
 {%endblock%}
 
 {%block ul%}
@@ -31,4 +38,5 @@
         </div>
     {%endif%}
     {%endfor%}
+
 {%endblock%}
