@@ -11,7 +11,7 @@
 
 {% block add %}
 <div>
-    <form>
+    <form action="{% url 'todo:submit' %}" method="get">
         <p>  do you want to subscribe to chanel 
         <input type="checkbox" name="subscription" value="yes">
         </p>
