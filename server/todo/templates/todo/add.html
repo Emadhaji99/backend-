@@ -18,14 +18,10 @@
         </p>
         <P>enter your email</P>
         <input type="text" name="text">
+        <a href="{%url 'todo:task' %}"> go task </a>
+        {{Form}}
         <input id="special" type="submit" value="send it">
     </form>
-    <a href="{%url 'todo:task' %}"> go task </a>
-    <form action="{% url 'todo:submit' %}" method="get">
-        {{Form}}
-        <input type="submit" value="send">
-    </form>
-</div>
 {%endblock%}
 
 {%block ul%}
