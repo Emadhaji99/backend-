@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .forms import content
+#-------------------------
 def task(request):
     context={"tas":["one","two","three","four"],}
     return render(request,"todo\\tasks.html",context)

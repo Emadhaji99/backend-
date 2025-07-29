@@ -12,7 +12,7 @@
 {% block add %}
 <div>
     <form action="{% url 'todo:submit' %}" method="post">
-        {% csrf_token %}
+        {% csrf_token %} 
         <p>  do you want to subscribe to chanel 
         <input type="checkbox" name="subscription" value="yes">
         </p>
